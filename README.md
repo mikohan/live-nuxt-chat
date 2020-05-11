@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # chat-nuxt
 
 > My mind-blowing Nuxt.js project
@@ -20,3 +21,7 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+=======
+# live-nuxt-chat
+Live chat created on nuxt and socket.io
+>>>>>>> d75d5f5b3365271cddb50cde76c6b150430ec1d0
