@@ -4,8 +4,6 @@ const server = require('http').createServer(app)
 
 // const io = require('socket.io')(server)
 const io = require('socket.io')(server, {
-  port: 4090,
-
   cors: {
     origin: '*:*',
     transports: ['websocket', 'polling', 'long-polling'],
@@ -13,8 +11,8 @@ const io = require('socket.io')(server, {
   }
 })
 
-const redisAdapter = require('socket.io-redis')
-io.adapter(redisAdapter({ host: 'localhost', port: 6379 }))
+// const redisAdapter = require('socket.io-redis')
+// io.adapter(redisAdapter({ host: 'localhost', port: 6379 }))
 
 const users = require('./users')()
 
