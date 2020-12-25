@@ -7,11 +7,11 @@ const io = require('socket.io')(server, {
   port: 4000,
 
   cors: {
-    origin: 'http://nuxtchat.tk:80',
+    origin: '*:*',
+    transports: ['polling'],
     methods: ['GET', 'POST']
   }
 })
-io.set('origins', 'http://nuxtchat.tk:80')
 const users = require('./users')()
 
 const m = (name, text, id) => ({ name, text, id })
