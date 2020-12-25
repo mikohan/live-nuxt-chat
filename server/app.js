@@ -12,6 +12,10 @@ const io = require('socket.io')(server, {
     methods: ['GET', 'POST']
   }
 })
+
+const redisAdapter = require('socket.io-redis')
+io.adapter(redisAdapter({ host: 'localhost', port: 6379 }))
+
 const users = require('./users')()
 
 const m = (name, text, id) => ({ name, text, id })
