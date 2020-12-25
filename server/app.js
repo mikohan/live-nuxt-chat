@@ -4,7 +4,7 @@ const server = require('http').createServer(app)
 const io = require('socket.io')(server, {
   port: 4000,
   cors: {
-    origin: 'http://nuxtchat.tk',
+    origin: 'http://localhost.4000',
     methods: ['GET', 'POST']
   }
 })
