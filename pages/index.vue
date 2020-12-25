@@ -69,7 +69,7 @@ export default {
         }
         this.$socket.emit('userJoined', user, (data) => {
           if (typeof data === 'string') {
-            console.log(data)
+            // console.log(data)
           } else {
             user.id = data.userId
             this.setUser(user)
