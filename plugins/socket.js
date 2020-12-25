@@ -6,7 +6,7 @@ export default function({ store }) {
   Vue.use(
     new VueSocketIO({
       debug: true,
-      connection: SocketIO('http://nuxtchat/'),
+      connection: SocketIO('http://nuxtchat.tk/'),
       vuex: {
         store,
         actionPrefix: 'SOCKET_',
