@@ -1,13 +1,17 @@
 /* eslint-disable */
 const app = require('express')()
 const server = require('http').createServer(app)
+
+// const io = require('socket.io')(server)
 const io = require('socket.io')(server, {
   port: 4000,
+
   cors: {
-    origin: 'http://localhost.4000',
+    origin: 'http://nuxtchat.tk:80',
     methods: ['GET', 'POST']
   }
 })
+io.set('origins', 'http://nuxtchat.tk:80')
 const users = require('./users')()
 
 const m = (name, text, id) => ({ name, text, id })
