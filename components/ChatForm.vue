@@ -2,8 +2,8 @@
   <v-col class="text-field" cols="12">
     <v-text-field
       v-model="text"
-      label="Введите сообщение"
-      placeholder="Placeholder"
+      label="Type your message"
+      placeholder="Type here"
       outlined
       @keydown.enter="send"
     ></v-text-field>
