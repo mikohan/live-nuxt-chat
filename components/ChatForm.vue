@@ -14,7 +14,7 @@
 export default {
   data() {
     return {
-      text: ''
+      text: '',
     }
   },
   methods: {
@@ -23,7 +23,7 @@ export default {
         'createMessage',
         {
           text: this.text,
-          id: this.$store.state.user.id
+          id: this.$store.state.user.id,
         },
         (data) => {
           if (typeof data === 'string') {
@@ -33,8 +33,8 @@ export default {
           }
         }
       )
-    }
-  }
+    },
+  },
 }
 </script>
 
