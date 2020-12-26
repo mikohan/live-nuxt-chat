@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12">
+  <v-col class="text-field" cols="12">
     <v-text-field
       v-model="text"
       label="Введите сообщение"
@@ -37,3 +37,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.text-field {
+  padding-bottom: 2rem;
+}
+</style>
