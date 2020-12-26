@@ -52,11 +52,11 @@ export default {
 }
 .c-form {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   right: 0;
   padding: 1rem;
-  height: 80px;
+  height: 100px;
   background: #212121;
 }
 .c-chat {
