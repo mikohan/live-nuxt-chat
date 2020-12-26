@@ -3,7 +3,7 @@
   <v-app app>
     <v-navigation-drawer v-model="drawer" app mobile-break-point="650px">
       <v-list subheader>
-        <v-subheader>Список Людей в Комнате</v-subheader>
+        <v-subheader>People inside Room</v-subheader>
 
         <v-list-item v-for="u in users" :key="u.id" @click.prevent>
           <!-- <v-list-item-avatar>
@@ -27,7 +27,7 @@
       <v-btn icon @click="exit">
         <v-icon>mdi-arrow-left</v-icon>
       </v-btn>
-      <v-toolbar-title>Добро пожаловать в чат {{ user.room }}</v-toolbar-title>
+      <v-toolbar-title>Welcome to our Chat {{ user.room }}</v-toolbar-title>
     </v-app-bar>
     <!-- Sizes your content based upon application components -->
     <v-content>
